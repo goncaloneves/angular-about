@@ -1,0 +1,30 @@
+production_server="www.goncaloneves.com"
+production_directory="apps/goncaloneves/public/"
+git_remote="git@github.com:goncaloneves/angular-about-live.git"
+
+echo "Starting deployment...";
+
+gulp clean
+
+if [ ! -d ./dist ]; then
+ mkdir dist
+fi
+
+cd dist
+
+if [ ! -d ./.git ]; then
+	echo "Git not found. Making clone..."
+	rm -r *
+	rm *
+	rm -r .*
+	rm .*
+	git clone ${git_remote} .
+	rm -r *
+	rm *
+fi
+
+echo "Building dist version..."; gulp build
+echo "Pushing changes to remote repo..."; git add --all .; git commit -m "Deployment"; git push origin; cd ..
+echo "SSH pull from production server..."; ssh -t root@${production_server} "cd ${production_directory}; git pull; exit"
+
+echo "Deployment complete."

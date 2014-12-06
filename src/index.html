@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" ng-app="angularApp">
+  <head>
+    <meta charset="utf-8">
+    <title ng-bind="title">Gonçalo Neves</title>
+    <meta name="description" content="Coding and learning everyday.">
+
+    <!-- html5mode base and crawl without hashtag -->
+    <base href="/">
+    <meta name="fragment" content="!">
+
+    <!-- Mobile metatags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Twitter metatags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@goncalopneves">
+    <meta name="twitter:description" content="Coding and learning everyday.">
+    <meta name="twitter:image:src" content="http://www.goncaloneves.com/assets/images/gravatar.jpg">
+    <meta name="twitter:site" content="@goncalopneves">
+    <meta name="twitter:title" content="Gonçalo Neves">
+
+    <!-- Facebook metatags -->
+    <meta property="og:description" content="Coding and learning everyday.">
+    <meta property="og:image" content="http://www.goncaloneves.com/assets/images/gravatar.jpg">
+    <meta property="og:title" content="Gonçalo Neves">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content ="http://www.goncaloneves.com/">
+
+    <!-- Google+ metatags -->
+    <link rel="author" href="https://plus.google.com/+thejablonsky">
+
+    <!-- Schema.org metatags -->
+    <meta itemprop="name" content="Gonçalo Neves">
+    <meta itemprop="description" content="Coding and learning everyday.">
+    <meta itemprop="image" content="http://www.goncaloneves.com/assets/images/gravatar.jpg">
+
+    <!-- Canonical url -->
+    <link rel="canonical" href="http://www.goncaloneves.com/">
+
+    <!-- Google Fonts -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#fafafa">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    <!-- build:css({.tmp,src}) styles/app.css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-css-only/css/bootstrap.css">
+    <link rel="stylesheet" href="components/autohide-navbar/autohide-navbar.directive.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app/index.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/angular.js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <!-- Google Tag Manager: change GTM-XXXXXX to be your ID. -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K7HDRJ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K7HDRJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container-fluid" ng-class="{'menu-mobile-open': page.menuMobile}" ng-swipe-left="page.menuMobile = false" ng-swipe-right="page.menuMobile = true">
+
+      <div class="row">
+
+        <div class="col-md-4 left-panel">
+          <div class="intro col-md-4 vertical-center">
+            <div class="text-center">
+              <h2>Gonçalo Neves</h2>
+              <p>
+                <i>"Coding and learning everyday."</i>
+              </p>
+              <ul class="list-inline">
+                <li><a data-icon="b" href="https://github.com/goncaloneves" title="Go to GitHub"></a></li>
+                <li><a data-icon="c" href="http://www.linkedin.com/in/goncalopiresneves" title="Go to LinkedIn"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 right-panel">
+          <nav autohide-navbar autohide-navbar-options="ha" class="navbar row">
+            <ul class="list-inline">
+              <li class="pull-left menu-item navbar-item visible-xs-inline-block"><a class="text-center" data-icon ng-class="{'icon-close': page.menuMobile, 'icon-menu': !page.menuMobile}" ng-click="page.menuMobile = !page.menuMobile" title="Menu">Menu</a></li>
+                <navbar-list></navbar-list>
+              <li class="pull-right"><a class="btn btn-default text-uppercase conv" href="mailto:me@goncaloneves.com" title="Get in touch">Get in touch <i data-icon="k">email</i></a></li>
+            </ul>
+
+            <div class="menu-mobile visible-xs">
+              <ul class="list-unstyled">
+                <navbar-list></navbar-list>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="row visible-xs wrapper-overlay" ng-click="page.menuMobile = false"></div>
+
+          <div class="row wrapper">
+            <div class="col-md-12 view" ng-view></div>
+            <div class="col-md-12 view" error-view></div>
+            <div class="col-md-12 credits" ng-show="page.rendered">
+              <p>Made with <i data-icon="g" >love</i> using <a href="https://angularjs.org" title="Go to AngularJS">AngularJS</a> and <a href="https://wordpress.org" title="Go to WordPress">WordPress</a>. This code is available on <a href="https://github.com/goncaloneves/angular-about" title="Go to GitHub">GitHub</a>, licensed under <a href="http://opensource.org/licenses/MIT" title="Go to MIT license">MIT</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <script src="app/index.js"></script>
+    <script src="app/page/page.controller.js"></script>
+    <script src="components/autohide-navbar/autohide-navbar.directive.js"></script>
+    <script src="components/error-view/error-view.directive.js"></script>
+    <script src="components/navbar-list/navbar-list.directive.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automaticaly converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

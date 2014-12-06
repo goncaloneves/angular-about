@@ -1,0 +1,28 @@
+autohide-navbar, [autohide-navbar] {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+autohide-navbar.transition, [autohide-navbar].transition {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+autohide-navbar[autohide-navbar-options~="ha"], [autohide-navbar][autohide-navbar-options~="ha"] {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+autohide-navbar.fixed, [autohide-navbar].fixed {
+  position: fixed;
+  top: 0;
+}
