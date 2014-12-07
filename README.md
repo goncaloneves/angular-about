@@ -29,10 +29,11 @@ Milestone
 
 What may follow:
 
- 1. Update unit / e2e tests
- 2. Add contact page
- 3. Add post page / post list
- 4. Integrate Disqus comments
+ 1. Release Auto Hide Navbar and Error View directives separately
+ 2. Update unit / e2e tests
+ 3. Add contact page
+ 4. Add post page / post list
+ 5. Integrate Disqus comments
 
 Usage
 -----
