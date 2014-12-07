@@ -67,7 +67,7 @@ I am running an Apache server, so I am using `.htaccess` to redirect hash reques
 **WordPress:**
 I have it installed under the same domain in a sub-folder.
 Then install [wp-api here](http://wp-api.org) or on [GitHub](https://github.com/WP-API/WP-API).
-Install my [WordPress REST Domain Redirect](https://github.com/goncaloneves/rest-domain-redirect) plugin if you want to redirect requests from your sub-folder WordPress installation to your root folder without including `/wp-admin` on `template_redirect` action as recommended.
+Install my [WordPress REST Domain Redirect](https://github.com/goncaloneves/rest-domain-redirect) plugin if you want to redirect requests from your sub-folder WordPress installation to your root domain folder without including `/wp-admin` on `template_redirect` action as recommended.
 
 ----------
 
