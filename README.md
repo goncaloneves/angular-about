@@ -59,7 +59,19 @@ I have added a shell script file `deploy.ssh` in your app root folder, that it i
 Installation
 ------------
 
-Let's create our App really fast.    
+**Server:**
+I am running an Apache server, so I am using `.htaccess` to redirect hash requests to index and send `?_escaped_fragment_=` requests to [Prerender.io](https://prerender.io/) that delivers html snapshots to crawlers using PhantomJS.
+
+----------
+
+**WordPress:**
+I have it installed under the same domain in a sub-folder.
+Then install [wp-api here](http://wp-api.org) or on [GitHub](https://github.com/WP-API/WP-API).
+Install my [WordPress REST Domain Redirect](https://github.com/goncaloneves/rest-domain-redirect) plugin if you want to redirect requests from your sub-folder WordPress installation to your root domain folder without including `/wp-admin` on `template_redirect` action as recommended.
+
+----------
+
+**Let's create our App really fast:**
 
  1. `mkdir angularAbout`
  2. `cd angularAbout`
