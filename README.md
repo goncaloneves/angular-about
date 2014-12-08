@@ -104,4 +104,16 @@ You will need *ssh access* from where you run the script to your production serv
  3. Clone your repository
  4. Edit your `deploy.ssh` file and change `production_server`, `production_directory` and `git_remote` with your information
  5. Check if you can ssh into your production server using ssh keys so you don't have to worry about password prompts in the future
- 6. When all it's ready just `. deploy.ssh`
+
+**Other files that you need to change before deploying:**
+
+`/src/index.html`
+
+ - Metatags in `<head>`
+
+`/src/.htaccess`
+
+ - Line 2: Prerender token
+ - Line 19: Your website domain, search for www.goncaloneves.com 
+ 
+You are done. Now it's time for `. deploy.ssh`
